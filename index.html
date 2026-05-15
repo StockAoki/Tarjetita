@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#ece2d4" />
+  <title>Para Fiorella 🌹</title>
+  <link rel="stylesheet" href="cartita.css" />
+</head>
+<body>
+
+  <template id="__bundler_thumbnail">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+      <rect width="200" height="200" fill="#efe4d1"/>
+      <g transform="translate(60 70)">
+        <rect width="80" height="56" rx="2" fill="#e2c4a8" stroke="#8b4543" stroke-width="1.5"/>
+        <path d="M0 0 L40 32 L80 0" fill="none" stroke="#8b4543" stroke-width="1.5"/>
+        <circle cx="40" cy="28" r="10" fill="#8b2520"/>
+        <text x="40" y="33" text-anchor="middle" font-family="serif" font-style="italic" font-size="13" fill="#f5d9c4">F</text>
+      </g>
+      <text x="100" y="160" text-anchor="middle" font-family="cursive" font-size="18" fill="#8b4543">para Fiorella</text>
+    </svg>
+  </template>
+
+  <div class="scene">
+    <!-- corner doodles -->
+    <span class="doodle" style="top: 10%; left: 12%; font-size: 36px;">♡</span>
+    <span class="doodle" style="top: 14%; right: 14%; font-size: 24px; animation-delay: 1s;">✦</span>
+    <span class="doodle" style="bottom: 22%; left: 10%; font-size: 22px; animation-delay: 2s;">✿</span>
+    <span class="doodle" style="bottom: 26%; right: 12%; font-size: 30px; animation-delay: 0.5s;">♡</span>
+    <span class="doodle" style="top: 8%; left: 50%; font-size: 18px; animation-delay: 1.5s;">✦</span>
+
+    <!-- floating hearts container -->
+    <div class="hearts-layer" style="position: absolute; inset: 0; pointer-events: none;"></div>
+
+    <div class="envelope" role="button" aria-label="abrir carta" tabindex="0">
+
+      <!-- Letter (behind, slides up when opened) -->
+      <div class="letter">
+        <div class="letter-content">
+          <div class="letter-date">14 · mayo · 2026</div>
+          <h2 class="letter-greeting">Mi amor,</h2>
+
+          <div class="photo-slot">
+            <div class="photo-tape"></div>
+            <img src="foto.jpeg" alt="Nosotros" />
+          </div>
+
+          <p class="letter-body">
+            Te amo mucho mi amor. Gracias por <em>un mes más</em> juntos
+            — <em>1 año y 2 meses</em> de ti.
+          </p>
+          <p class="letter-body">
+            Eres la mujer de mi corazón y siempre, siempre te voy a apoyar.
+          </p>
+
+          <div class="letter-sign">
+            
+            <span style="font-family: var(--font-hand); font-size: 26px;">-Sergio <span class="heart">♡</span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Envelope body -->
+      <div class="env-body"></div>
+
+      <!-- Flap -->
+      <div class="env-flap"></div>
+
+      <!-- Wax seal -->
+      <div class="seal">
+        <span class="seal-letter">F</span>
+      </div>
+    </div>
+
+    <div class="hint">toca el sobre ✿</div>
+
+    <button class="reset-btn" type="button">cerrar</button>
+  </div>
+
+  <script src="cartita.js"></script>
+</body>
+</html>
