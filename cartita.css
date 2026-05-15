@@ -188,6 +188,14 @@ body::before {
   box-shadow: 0 30px 60px -15px var(--shadow), 0 8px 20px rgba(0,0,0,0.1);
 }
 
+@media (max-width: 699px) {
+  .envelope.opened .letter {
+    transform: translateX(-50%) translateY(calc(-50vh + 110px));
+    height: min(500px, calc(100vh - 130px));
+    overflow-y: auto;
+  }
+}
+
 .letter-content {
   padding: 30px 26px;
   height: 100%;
